@@ -4,7 +4,15 @@
 /.idea/libraries
 /.idea/modules.xml
 /.idea/workspace.xml
+/.idea/*
 .DS_Store
 /build
-/captures
+/capturesgit
 .externalNativeBuild
+*.swp
+webapilibrary
+journal
+.project
+.settings
+.classpath
+/secrets.properties
