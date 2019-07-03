@@ -26,7 +26,7 @@ before_install:
 
 script:
   - android list targets
-  - echo no | android create avd --force -n test -t android-28 --abi x86
+  - echo no | android create avd --force -n test -t android-28 --abi default
   - emulator -avd test -no-skin -no-audio -no-window &
   - android-wait-for-emulator
   - ./gradlew test assembleAndroidTest
