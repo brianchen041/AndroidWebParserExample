@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Parser</string>
+    <!--<string name="default_url">http://www.myexternalip.com/raw</string>-->
+    <string name="default_url">https://developer.android.com/index.html</string>
+</resources>
