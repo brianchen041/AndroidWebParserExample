@@ -18,7 +18,7 @@ android:
 #    - sys-img-armeabi-v7a-android-21
     - android-28
 #    - sys-img-armeabi-v7a-android-28
-#    - sys-img-x86_64-android-28
+    - sys-img-x86_64-android-28
 #    - sys-img-x86-android-28
   licenses:
     - 'android-sdk-preview-license-52d11cd2'
@@ -51,10 +51,10 @@ before_script:
   - export ANDROID_NDK_HOME=$ANDROID_HOME/ndk-bundle
 
 script:
-#  - android list sdk --extended --no-ui --all
-#  - echo "y" | android update sdk -a --no-ui --filter android-28,sys-img-x86_64-android-28
+  - android list sdk --extended --no-ui --all
+  - echo "y" | android update sdk -a --no-ui --filter android-28,sys-img-x86_64-android-28
   - android list targets
-  - echo no | android create avd --force -n test -t android-28 --abi "no ABIs" -c 100M
+  - echo no | android create avd --force -n test -t android-28 --abi x86_64 -c 100M
   - emulator -avd test -no-audio -no-window &
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
