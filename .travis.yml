@@ -50,6 +50,8 @@ script:
 
 deploy:
   provider: releases
+  api_key:
+    secure: $AndroidWebParserExample
   file: "app/build/outputs/apk/release/MyParser-release-unsigned.apk"
   skip_cleanup: true
   overwrite: true
