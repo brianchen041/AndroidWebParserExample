@@ -14,6 +14,7 @@ android:
     - tools
     - platform-tools
     - extra-android-m2repository
+    - android-22
     - sys-img-armeabi-v7a-android-22
 #    - sys-img-x86-google_apis_playstore-26
 #    - sys-img-x86-android-26
