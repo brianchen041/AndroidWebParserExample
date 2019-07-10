@@ -15,8 +15,6 @@ android:
     - platform-tools
     - tools
     - extra-android-m2repository
-#    - sys-img-armeabi-v7a-android-21
-#    - sys-img-armeabi-v7a-android-28
   licenses:
     - 'android-sdk-preview-license-52d11cd2'
     - 'android-sdk-license-.+'
